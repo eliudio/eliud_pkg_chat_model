@@ -16,48 +16,16 @@
 import 'package:eliud_core_helpers/etc/random.dart';
 import 'package:eliud_core_helpers/helpers/common_tools.dart';
 import 'package:eliud_core_helpers/query/query_tools.dart';
-import 'package:eliud_core_main/model/app_model.dart';
 
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import '../model/chat_medium_list_bloc.dart';
-import '../model/chat_medium_list.dart';
-import '../model/chat_medium_list_event.dart';
 import '../model/chat_medium_model.dart';
 import '../model/chat_medium_entity.dart';
 import '../model/chat_medium_repository.dart';
 
 typedef ChatMediumListChanged = Function(List<ChatMediumModel> values);
 
-chatMediumsList(app, context, value, trigger) =>
-    EmbeddedComponentFactory.chatMediumsList(app, context, value, trigger);
-
-class EmbeddedComponentFactory {
-/* 
- * chatMediumsList function to construct a list of ChatMediumModel
- */
-  static Widget chatMediumsList(AppModel app, BuildContext context,
-      List<ChatMediumModel> values, ChatMediumListChanged trigger) {
-    ChatMediumInMemoryRepository inMemoryRepository =
-        ChatMediumInMemoryRepository(
-      trigger,
-      values,
-    );
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider<ChatMediumListBloc>(
-          create: (context) => ChatMediumListBloc(
-            chatMediumRepository: inMemoryRepository,
-          )..add(LoadChatMediumList()),
-        )
-      ],
-      child: ChatMediumListWidget(app: app, isEmbedded: true),
-    );
-  }
-}
+class EmbeddedComponentFactory {}
 
 /* 
  * ChatMediumInMemoryRepository is an in memory implementation of ChatMediumRepository

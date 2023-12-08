@@ -1,7 +1,6 @@
 ---
 name: eliud_pkg_chat_model
-description: eliud_pkg_chat is a package to provide chat functionality to an app.
-  More info at https://eliud.io
+description: eliud_pkg_chat_model is the model package for eliud_pkg_chat. More info at https://eliud.io
 homepage: https://eliud.io
 repository: https://github.com/eliudio/eliud_pkg_chat
 version: 1.0.0

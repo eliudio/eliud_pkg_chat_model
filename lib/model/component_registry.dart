@@ -40,9 +40,6 @@ class ComponentRegistry {
       "rooms",
     ]);
 
-    Apis.apis().getRegistryApi().register(
-        componentName: "eliud_pkg_chat_model_internalWidgets",
-        componentConstructor: ListComponentFactory());
     Apis.apis().getRegistryApi().addDropDownSupporter(
         "chatDashboards", DropdownButtonComponentFactory());
     Apis.apis().getRegistryApi().register(
