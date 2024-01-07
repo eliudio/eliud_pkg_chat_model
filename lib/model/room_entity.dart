@@ -17,6 +17,7 @@ import 'dart:collection';
 import 'dart:convert';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:eliud_core_helpers/base/entity_base.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 
 class RoomEntity implements EntityBase {
   final String? ownerId;

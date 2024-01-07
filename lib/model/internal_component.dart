@@ -23,7 +23,11 @@ import 'package:eliud_pkg_chat_model/model/chat_list_bloc.dart';
 import 'package:eliud_pkg_chat_model/model/chat_dropdown_button.dart';
 import 'package:eliud_pkg_chat_model/model/chat_list_event.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
 import 'package:eliud_pkg_chat_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 
 import 'package:eliud_pkg_chat_model/model/chat_dashboard_list_bloc.dart';
 //import 'package:eliud_pkg_chat_model/model/chat_dashboard_list.dart';
@@ -37,15 +41,30 @@ import 'package:eliud_pkg_chat_model/model/chat_member_info_list_bloc.dart';
 import 'package:eliud_pkg_chat_model/model/chat_member_info_dropdown_button.dart';
 import 'package:eliud_pkg_chat_model/model/chat_member_info_list_event.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
+
 import 'package:eliud_pkg_chat_model/model/member_has_chat_list_bloc.dart';
 //import 'package:eliud_pkg_chat_model/model/member_has_chat_list.dart';
 import 'package:eliud_pkg_chat_model/model/member_has_chat_dropdown_button.dart';
 import 'package:eliud_pkg_chat_model/model/member_has_chat_list_event.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
+
 import 'package:eliud_pkg_chat_model/model/room_list_bloc.dart';
 //import 'package:eliud_pkg_chat_model/model/room_list.dart';
 import 'package:eliud_pkg_chat_model/model/room_dropdown_button.dart';
 import 'package:eliud_pkg_chat_model/model/room_list_event.dart';
+
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 
 typedef DropdownButtonChanged = Function(String? value, int? privilegeLevel);
 

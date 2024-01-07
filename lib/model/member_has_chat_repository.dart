@@ -13,7 +13,11 @@
 
 */
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
 import 'package:eliud_pkg_chat_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 import 'package:eliud_pkg_chat_model/model/entity_export.dart';
 
 import 'dart:async';

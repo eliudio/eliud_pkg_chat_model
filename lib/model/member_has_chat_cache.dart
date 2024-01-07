@@ -19,8 +19,13 @@ import 'package:eliud_core_helpers/helpers/common_tools.dart';
 import 'package:eliud_pkg_chat_model/model/member_has_chat_model.dart';
 import 'package:eliud_pkg_chat_model/model/member_has_chat_repository.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
 import 'package:eliud_pkg_chat_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/cache_export.dart';
+import 'package:eliud_core_model/model/model_export.dart';
 import 'package:eliud_pkg_chat_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 import 'package:eliud_pkg_chat_model/model/entity_export.dart';
 
 class MemberHasChatCache implements MemberHasChatRepository {

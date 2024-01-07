@@ -17,6 +17,10 @@ import 'package:collection/collection.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:eliud_core_helpers/base/model_base.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
+import 'package:eliud_core_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 import 'package:eliud_pkg_chat_model/model/entity_export.dart';
 
 import 'package:eliud_pkg_chat_model/model/chat_member_info_entity.dart';

@@ -19,8 +19,13 @@ import 'package:eliud_core_helpers/helpers/common_tools.dart';
 import 'package:eliud_pkg_chat_model/model/chat_member_info_model.dart';
 import 'package:eliud_pkg_chat_model/model/chat_member_info_repository.dart';
 
+import 'package:eliud_core_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/abstract_repository_singleton.dart';
 import 'package:eliud_pkg_chat_model/model/repository_export.dart';
+import 'package:eliud_core_model/model/cache_export.dart';
+import 'package:eliud_core_model/model/model_export.dart';
 import 'package:eliud_pkg_chat_model/model/model_export.dart';
+import 'package:eliud_core_model/model/entity_export.dart';
 import 'package:eliud_pkg_chat_model/model/entity_export.dart';
 
 class ChatMemberInfoCache implements ChatMemberInfoRepository {
